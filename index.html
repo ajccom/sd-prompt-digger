@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>解析 prompt</title>
+  <script src="./digger.js"></script>
+</head>
+<body>
+  <input type="file" id="file-input" />
+  <pre class="pre"></pre>
+  <script>
+    document.getElementById('file-input').addEventListener('change', function (e) {
+      diggerPrompts(e.target.files[0]).then(data => { 
+        document.querySelector('.pre').innerHTML = JSON.stringify(data, null, 2);
+      });
+    })
+  </script>
+</body>
+</html>
