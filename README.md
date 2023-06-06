@@ -4,7 +4,7 @@
 
 仅能解析 stable diffusion 生成图的咒文，功能类似 webui 中的 PNG INFO tag。
 
-demo: coming soon
+demo: [传送门](https://ajccom.github.io/sd-prompt-digger/)
 
 ## 用法
 
